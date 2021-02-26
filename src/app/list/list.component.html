@@ -1,0 +1,31 @@
+
+<div class="container">
+    <div class="notification is-primary">
+        <div class="columns">
+            <div class="column">  
+
+                <ul>
+                    
+                    <app-post [post]="item" *ngFor="let item of posts" 
+                    
+                    (deleteItempost)="deleteItem($event)"></app-post>
+                </ul>
+            </div>
+            <div class="column">
+              <app-add (addPostEvent)="addItem($event)"
+             > </app-add>
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+  
+
+
+
+
+
+
+
+
